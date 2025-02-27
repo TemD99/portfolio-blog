@@ -1,0 +1,66 @@
+/* Contact.css */
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .contact-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem;
+    color: #61dafb;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-card h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  .contact-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
+  
+  /* Button styling (reuse or override global styles if necessary) */
+  .button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .button:active {
+    transform: translateY(0);
+  }
+  

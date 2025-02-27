@@ -1,0 +1,90 @@
+[
+    {
+      "id": 1,
+      "title": "Self-Introduction",
+      "excerpt": "Hello, I'm Temitayo Shorunke, and I'm currently a student at Full Sail University...",
+      "content": "Hello, I'm Temitayo Shorunke, and I'm currently a student at Full Sail University, graduating in July 2024. Ever since I was a child, I've loved to tinker with things, especially computers. I still remember the excitement of booting up my Windows 98 computer after school. My tech journey initially started with video games, which served as a catalyst for my transition into the tech world. Over the years, I gravitated towards creating video games, which led me to programming. After exploring the tech landscape, I realized that AI was my true calling. My future goal is to work for a reputable company creating AI software.",
+      "date": "Mar 10, 2024",
+      "image": "/imgs/facecraft.png"
+    },
+    {
+      "id": 2,
+      "title": "Design Doc & Style Tile",
+      "excerpt": "This week, my team and I took significant strides in our real face generator AI project...",
+      "content": "This week, my team and I took significant strides in the development of our real face generator AI project, focusing on the foundational elements that will guide the entire development process. We dedicated substantial effort towards creating a comprehensive design document. This document is pivotal for us as it outlines all the necessary tools, frameworks, and technologies required to bring our vision to life. Given our project's complexity and ambition, we meticulously detailed the AI and machine learning libraries we plan to leverage, particularly emphasizing those compatible with Python, considering our expertise and the project's technical demands.\n(new line)Parallel to the technical documentation, we also crafted a style tile, a visual representation of our web application's aesthetic and interface design. This style tile is more than just a set of guidelines; it's the embodiment of our application's identity. We selected a color scheme that reflects the innovative and cutting-edge nature of our AI technology while ensuring it fosters a user-friendly and engaging environment. The buttons and UI elements were designed with accessibility and intuitiveness in mind, ensuring that users of all tech savviness levels can navigate our application with ease.\n(new line)Creating these documents was a collaborative and thoughtful process, involving every team member's input to ensure that our vision aligns not only with our technological capabilities but also with the best possible user experience. This preparatory phase is crucial for us, setting a solid foundation for the development work ahead. It ensures that as we delve deeper into the complexities of AI development, we remain anchored to our user-centric and design-led approach, aiming to deliver a product that's not only technologically advanced but also accessible and visually appealing.",
+      "date": "March 17, 2024",
+      "image": "/imgs/facecraft.png"
+    },
+
+    {
+        "id": 3,
+        "title": "Design Doc (Final), Wireframe & Jira",
+        "excerpt": "This past week marked a significant phase for my team and me as we dove deep into the ...",
+        "content": "This past week marked a significant phase for my team and me as we dove deep into the heart of our project, initially known as the Unreal Face Generator. The journey was intense and rewarding, leading to several key achievements that pushed us closer to our vision.Firstly, we wrapped up the final draft of our design document. This critical piece outlines the entire framework and functionality of our application. Drafting it was no small feat. It involved detailed discussions, debates, and iterations. The document now serves as our roadmap, clearly defining what we aim to build and how we plan to achieve it.\n\n Simultaneously, we tackled the first draft of our wireframe. This step was about bringing our ideas to life visually, giving us a preliminary look at the user interface and experience. Crafting the wireframe was like drawing the first lines of a masterpiece, setting the stage for what’s to come. It allowed us to see potential issues and opportunities, making it easier to refine our approach.Moreover, we set up a Jira board, meticulously filling it with all the stories needed to bring the Unreal Face Generator to fruition. This organizational tool has become our project's backbone, enabling us to track progress, prioritize tasks, and ensure nothing slips through the cracks.\n\n In a move that signifies a new direction and identity for our project, we decided to rename it FaceCraft. This new name better reflects the creativity and innovation that we’re pouring into this venture, signaling our commitment to not just create but craft with precision and imagination. This week was a testament to our team’s dedication and hard work, setting a solid foundation for the exciting journey ahead.",
+        "date": "March 25, 2024",
+        "image": "/imgs/facecraft.png"
+      }
+      ,
+
+    {
+        "id": 4,
+        "title": "Post-mortem",
+        "excerpt": "What a week it’s been on the FaceCraft front! As we move forward from our initial strides ...",
+        "content": "What a week it’s been on the FaceCraft front! As we move forward from our initial strides, the momentum within the team has been nothing short of electrifying. Picking up where we left off, this week was all about bringing our vision into sharper focus, and let me tell you, it feels like we’re truly onto something special.Sprint planning kicked us off on a high note. Gathered around our communal workspace, ideas flew thick and fast, each one building on the last until our project’s next steps were crystal clear. It’s these sessions that remind me why I love what we do; it’s not just about building something new, it’s about building it together.\n\n And then, the wireframe. If last week's draft was the first brushstroke, this week’s version felt like filling in the vital colors of our masterpiece. Finalizing the wireframe was a collective sigh of relief and a fist pump in one. Seeing our ideas morph into a tangible blueprint brings a kind of satisfaction that’s hard to describe. It’s like watching our digital dreams get grounded in reality, ready to be built upon.\n\n The post-mortem meeting was our week’s closing act. Far from being a somber affair, it was our chance to reflect, recalibrate, and re-energize. Discussing what worked, what didn’t, and how we can learn from both was invaluable. It’s these reflections that carve the path for our project, ensuring we’re not just moving forward, but soaring. Renaming our project to FaceCraft last week might have symbolized a new chapter, but this week? This week we started writing it. Each line of code, each design decision, brings us closer to turning FaceCraft into something beyond the ordinary. Stay with us; it’s going to be a journey worth watching.",
+        "date": "March 31, 2024",
+        "image": "/imgs/facecraft.png"
+      }
+
+      ,
+
+    {
+        "id": 5,
+        "title": "Enhancing Text-to-Image Generation with CLIP Model Tuning",
+        "excerpt": "This week, I've made significant strides in refining our text-to-image generation capabilities ...",
+        "content": "This week, I've made significant strides in refining our text-to-image generation capabilities, particularly through fine-tuning the CLIP model to produce more accurate images closely aligned with textual descriptions. The integration of multi-language support and a meticulous stop words filtering system has notably improved the precision and relevance of our generated images.\n\n Starting with the CLIP model, sourced from OpenAI’s robust library, I tailored its parameters to better interpret the nuances of descriptive text inputs. By adjusting the model's sensitivity to textual cues, the generated images now reflect a more faithful visualization of the described scenarios and characters. This fine-tuning process involved extensive experimentation with different settings to find the optimal balance that captures the essence of the text while maintaining high-quality image outputs.\n\n Adding to the linguistic capabilities, I incorporated multi-language support using the MarianMTModel and MarianTokenizer. This upgrade allows our system to cater to a diverse range of languages, broadening our user base and enhancing accessibility. Users can now input descriptions in various languages, which are then translated into English to ensure compatibility with the predominantly English-trained CLIP model.\n\n Moreover, to refine the input further, I implemented a stop words removal feature using NLTK’s extensive corpus. This function filters out common but unnecessary words from descriptions, allowing the CLIP model to focus on the most impactful elements of the text. This step is crucial for maintaining the model's attention on significant details without being sidetracked by linguistic filler.\n\n These enhancements not only improve the aesthetic quality of the images but also streamline the processing pipeline, making it more efficient and responsive. As we continue to refine these features, I anticipate even greater accuracy and creativity in our image generation capabilities, pushing the boundaries of what AI can achieve in creative contexts.",
+        "date": "Apr 21, 2024",
+        "image": "/imgs/facecraft.png"
+      }
+      ,
+
+    {
+        "id": 6,
+        "title": "Language Translation and Multi-Language Support",
+        "excerpt": "This week, significant changes were made to FaceCraft, focusing primarily on improving ...",
+        "content": "This week, significant changes were made to FaceCraft, focusing primarily on improving the language translation capabilities. Previously, the project utilized a single multilingual model, Helsinki-NLP/opus-mt-mul-en, from MarianMT for translating various languages to English. While functional, this approach had limitations in terms of translation accuracy and specificity. To address these issues and enhance the precision of language translation, i transitioned from using the multilingual model to deploying individual language-specific models for each major language—French, Spanish, German, Japanese, Chinese, and Portuguese. Each language now has a dedicated translation model, such as Helsinki-NLP/opus-mt-fr-en for French to English, ensuring more nuanced and accurate translations. This change allows for greater control over linguistic nuances, which is crucial for generating precise image descriptions that our AI uses to create images. \n\n Moreover, i introduced a language detection mechanism that can identify the language used in the text description input by the user. This feature enables the system to automatically select the appropriate translation model based on the detected language, streamlining the process and enhancing user experience.\n\n A significant advancement this week is the capability to handle multilingual prompts within a single input. Our system can now effectively manage descriptions containing multiple languages, translating them seamlessly into English for consistent processing. This was achieved by integrating the langdetect library, which detects and segments different languages within the text, allowing the corresponding translation models to work in tandem.",
+        "date": "Apr 29, 2024",
+        "image": "/imgs/facecraft.png"
+      }   ,
+   
+      {
+          "id": 7,
+          "title": "Bio Generator and Image Captioning",
+          "excerpt": "This week, I focused on two part of our capstone projects: developing a bio generator ...",
+          "content": "This week, I focused on two part of our capstone projects: developing a bio generator and generating image captions for training data. Initially, I used a pre-trained GPT-2 model from the transformers library to create bios. Despite extensive fine-tuning, the model struggled with consistency and accuracy, producing repetitive and insufficiently diverse outputs. Recognizing these limitations, I pivoted to a new approach: a random bio generator. This script uses extensive lists of gender-specific first names, last names, occupations, hometowns, and other details. It processes user prompts to determine gender and age group, ensuring diverse and realistic bios. This solution proved reliable and flexible, meeting our immediate needs effectively.\n\n Simultaneously, I worked on an image captioning script for Face Craft, crucial for generating training data for the GAN networks. The script uses the VisionEncoderDecoderModel from Hugging Face's transformers library, specifically the nlpconnect/vit-gpt2-image-captioning model. It processes images to generate captions, vital for understanding and labeling the training data. Despite the script’s efficiency, the generated captions were not as detailed as expected, often lacking specificity and richness needed for high-quality training data. This shortcoming led me to consider alternative methods for improving the detail and accuracy of the image captions.\n\n Overall, this week’s work highlighted the importance of flexibility and adaptation in project development. The random bio generator provided a practical solution, while the image captioning script laid the groundwork for further improvements in Face Craft.",
+          "date": "May 19, 2024",
+          "image": "/imgs/facecraft.png"
+        }
+        ,
+   
+        {
+            "id": 8,
+            "title": "Image Manipulation in Face Craft",
+            "excerpt": "This week, I dove deep into the intricacies of image manipulation ...",
+            "content": "This week, I dove deep into the intricacies of image manipulation as part of my capstone project, Face Craft. The primary objective was to refine the image manipulation capabilities of the project using StyleGAN2-ADA and CLIP models. The goal is to allow users to alter specific attributes of generated images, such as adding glasses or changing hair color, through intuitive sliders.\n\n The journey began with integrating StyleGAN2-ADA with the CLIP model. This involved loading a pre-trained StyleGAN2-ADA model to generate high-fidelity images and using the CLIP model to understand and apply text-based transformations. I focused on creating a robust pipeline where a randomly generated image could be manipulated in real-time based on user input.\n\n A significant challenge was finding and precomputing latent directions for specific attributes. While I attempted to isolate changes for attributes like glasses, hair color, and face shape, the process is still a work in progress. Fine-tuning these directions to achieve precise control over the image's attributes remains ongoing. The trial-and-error nature of exploring the latent space has been both challenging and insightful, revealing the complexities of attribute manipulation.\n\n To enhance the user experience, I implemented a graphical interface using Tkinter. This interface features sliders that adjust the intensity of each attribute's manipulation. The real-time feedback provided by the interface was essential for ensuring the manipulations were both intuitive and effective. I also optimized the image resizing process to ensure smoother transitions and better visual quality using the latest image resampling techniques.\n\n Overall, this week's work significantly advanced the image manipulation functionality of Face Craft. While I haven't yet successfully isolated the attributes like glasses and hair color, the progress made sets a solid foundation for further enhancements. I will continue to fine-tune and improve this aspect in the coming week, striving to create a powerful, user-friendly tool for creative image generation and manipulation.",
+            "date": "May 27, 2024",
+            "image": "/imgs/facecraft.png"
+          }
+          ,
+   
+        {
+            "id": 9,
+            "title": "FaceCraft: Crafting Faces with AI",
+            "excerpt": "Our capstone project, FaceCraft, has been a journey of innovation, learning, and overcoming challenges ...",
+            "content": "Our capstone project, FaceCraft, has been a journey of innovation, learning, and overcoming challenges. Our goal was to develop an AI model capable of generating entirely new human faces using Generative Adversarial Networks (GANs). The journey has been filled with ups and downs, technical hurdles, and moments of triumph.\n\n We encountered numerous technical issues along the way. For instance, PoPOS, our initial attempt at image preprocessing, didn’t yield the expected results. To tackle these challenges, we leveraged WSL (Windows Subsystem for Linux) and Docker to create a consistent development environment, ensuring that all team members were on the same page regardless of their operating system.\n\n Central to our project was the StyleGAN2 architecture, renowned for its ability to produce high-quality, photorealistic images. We experimented with different GAN variants, including StyleGAN-T and StyleGAN-ADA, each offering unique benefits and challenges. These experiments were crucial in refining our approach and understanding the strengths and limitations of each model.\n\n Our model, FaceCraft, generates images based on user prompts and random seeds. This dual capability allows for a broad range of outputs, from specific requests to entirely random creations. Additionally, we incorporated filters and the ability to manipulate images in latent space, providing users with extensive control over the generated faces.\n\n This project has been a remarkable research endeavor. We’ve not only created a powerful AI tool but also significantly expanded our knowledge of AI and machine learning. FaceCraft has been a testament to our hard work, collaboration, and the endless possibilities of AI-driven creativity.",
+            "date": "Jul 23, 2024",
+            "image": "/imgs/facecraft.png"
+          }
+  
+        
+  ]
+  

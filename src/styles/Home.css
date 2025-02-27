@@ -1,0 +1,90 @@
+/* src/components/Home.css */
+
+/* Overall Page Container */
+.home-container {
+    background-color: #121212; /* Dark background */
+    color: #ffffff;           /* White text */
+    min-height: 30vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Title & Subtitle */
+  .home-title {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .home-subtitle {
+    margin: 0.5rem 0 1rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #bbbbbb;
+  }
+  
+  /* Divider Line */
+  .divider {
+    width: 80%;
+    border: none;
+    border-top: 2px solid #444;
+    margin: 1rem 0 2rem;
+  }
+  
+  /* Section Container */
+  .home-section {
+    background-color: #1f1f1f;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(216, 132, 255, 0.5);
+  }
+  
+  .home-section h2 {
+    margin-top: 0;
+    font-size: 1.75rem;
+    margin-bottom: 0rem;
+  }
+  
+  .home-section p,
+  .home-section li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Unordered List Style */
+  .home-section ul {
+    margin: 1rem 0 0;
+    padding-left: 1.2rem;
+  }
+  
+  .home-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .home-title {
+      font-size: 2rem;
+    }
+  
+    .home-subtitle {
+      font-size: 1rem;
+    }
+  
+    .divider {
+      width: 90%;
+    }
+  
+    .home-section {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }
+  

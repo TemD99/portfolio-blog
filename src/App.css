@@ -1,0 +1,133 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+.site-header {
+  background-color: #282c34;
+  padding: 1rem 2rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center the nav */
+}
+
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.site-header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header nav a {
+  color: #61dafb;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+  color: #21a1f1;
+}
+
+/* Footer Styling */
+.site-footer {
+  background-color: #282c34;
+  color: #fff;
+  text-align: center;
+  padding: rem;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  background-color: #2a2a2a;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Link Styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Button Styling */
+.button {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 
+    background 0.3s ease, 
+    transform 0.2s ease, 
+    box-shadow 0.3s ease, 
+    color 0.3s ease;
+}
+
+/* On hover: scale up slightly, shift the gradient, add a glow */
+.button:hover {
+  background: linear-gradient(45deg, #6a00ff, #c600ff);
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(198, 0, 255, 0.6), 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: #000000; /* Ensures text remains visible if the gradient changes color */
+}
+
+/* On active click: revert scale, but keep the glow briefly */
+.button:active {
+  transform: scale(1);
+  box-shadow: 0 0 6px rgba(198, 0, 255, 0.6), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .site-header nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+  /* Style for strong elements to be underlined and slightly darker */
+  strong {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ffffff; /* Slightly darker than default white */
+  }
+/* Frameworks & Libraries section with smaller font size */
+.frameworks-section {
+  font-size: 0.85rem;
+}
+
+.frameworks-section ul {
+  list-style-type: disc;
+  margin-left: 1rem;
+  padding: 0;
+}
+
+.frameworks-section li {
+  margin-bottom: 0rem;
+}

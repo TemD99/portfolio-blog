@@ -1,0 +1,21 @@
+/* BlogDetail.css */
+
+.blog-detail {
+    max-width: 800px;
+    margin: 3rem auto;  /* Increased margin to add space on top and bottom */
+    padding: 2rem;      /* Padding inside the card */
+    text-align: left;
+  }
+  
+  .blog-detail .blog-date {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+  }
+  
+  .blog-detail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }

@@ -1,0 +1,47 @@
+/* src/styles/ProjectDetail.css */
+
+.project-detail {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+  
+  .project-detail section {
+    margin-bottom: 2rem;
+  }
+  
+  .project-detail h3 {
+    margin-bottom: 0.5rem;
+    color: #000000;
+  }
+  
+  .project-detail p {
+    color: #000000;
+    line-height: 1.5;
+  }
+  
+  /* Ensure the image fits nicely */
+  .project-image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Responsive video container */
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .frameworks-section li {
+    font-size: 0.1rem; /* adjust value as needed */
+  }
