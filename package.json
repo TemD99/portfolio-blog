@@ -2,7 +2,7 @@
   "name": "portfolio-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://TemD99.github.io/",
+  "homepage": "https://TemD99.github.io/portfolio-blog",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
