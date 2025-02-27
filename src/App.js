@@ -30,7 +30,7 @@ function App() {
         <main>
           <Routes>
             {/* Existing routes */}
-            <Route path="/" element={<Home />} />
+            <Route path="/portfolio-blog" element={<Home />} />
             <Route path="/portfolio-projects" element={<PortfolioList />} />
             <Route path="/blog" element={<BlogList />} />
             <Route path="/blog/:id" element={<BlogDetail />} />
