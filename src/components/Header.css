@@ -1,0 +1,125 @@
+/* Existing Header Styles... */
+
+.header {
+  background-color: rgb(26, 26, 26);
+  border-bottom: 1px solid white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-content {
+  text-align: center;
+}
+
+.Name {
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  white-space: pre;
+}
+
+.job-title {
+  margin: 0;
+  color: grey;
+  font-size: 0.9rem;
+  white-space: pre;
+}
+
+/* Navbar Styles */
+.navbar {
+  margin-top: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+  font-size: 0.9rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgba(32, 192, 255, 1);
+}
+
+/* Contact Nav Item */
+.contact-nav-item {
+  cursor: pointer;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.contact-nav-item:hover {
+  color: rgba(32, 192, 255, 1);
+}
+
+/* Contact Dropdown Styles */
+.contact-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(26, 26, 26);
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;  /* Horizontal layout */
+  gap: 0.5rem;
+  z-index: 2000;
+}
+
+/* Contact Card Styles */
+.contact-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 150px;
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.contact-card p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.contact-card .button {
+  display: inline-block;
+  background-color: rgb(32, 192, 255);
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}

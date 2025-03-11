@@ -1,0 +1,160 @@
+/* src/styles/ComputerVisionProject.css */
+:root {
+    --bg-color: rgb(20, 20, 20);
+    --accent-color: rgb(32, 192, 255);
+  }
+  
+  /* Overall Container */
+  .project-container.computer-vision-project {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+    background-color: var(--bg-color);
+    color: #f0f0f0;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 100px; /* Space for fixed header */
+  }
+  
+  /* Header Section */
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 1rem;
+  }
+  
+  .project-title {
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .project-github-button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .project-github-button:hover {
+    background-color: #fff;
+    color: var(--accent-color);
+  }
+  
+  /* Main Content Layout */
+  .project-content {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Left Column: Description */
+  .project-description {
+    flex: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .project-description h3.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+  }
+  
+  .project-description p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-description ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-description ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Right Column: Sidebar for Videos & Frameworks */
+  .project-sidebar {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Video Demo Section */
+  .video-demo {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .video-demo h3.section-title {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+  }
+  
+  .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  /* Frameworks Card */
+  .frameworks-card {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .frameworks-card h3.section-title {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    border-bottom: 1px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+  }
+  
+  .frameworks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .frameworks-list li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--accent-color);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  

@@ -1,0 +1,173 @@
+/* src/styles/Portfolio.css */
+
+/* Basic Dark Section for Portfolio */
+.dark-section#portfolio {
+  padding-top: 120px; /* Ensures content isn’t hidden under the fixed header */
+  padding-bottom: 60px;
+  background-color: rgb(20, 20, 20);
+  color: #f0f0f0;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Overall container for all sections (Data Science, Computer Vision, etc.) */
+.portfolio-items {
+  display: flex;
+  flex-direction: column; /* Stack each section vertically */
+  gap: 40px; /* Space between sections */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+  padding: 0 20px; /* Some horizontal padding */
+}
+
+/* Each portfolio section (like Data Science, Computer Vision) */
+.portfolio-section {
+  margin-bottom: 20px;
+}
+
+.portfolio-section-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid rgb(32, 192, 255);
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* The container that holds multiple cards in a row */
+.portfolio-items-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center them horizontally */
+}
+
+/* Card styling */
+.portfolio-card {
+  position: relative;
+  width: 300px; /* Fixed width so cards line up nicely */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-card:hover {
+  border-color: rgb(255, 255, 255);
+  transform: translateY(-5px);
+}
+
+/* Card background image */
+.card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+/* Card content overlay */
+.card-content {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  inset: 1px;
+  padding: 20px;
+}
+
+/* Optional shine effect overlay */
+.shine {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-15deg);
+  transition: all 0.6s ease;
+}
+
+.portfolio-card:hover .shine {
+  left: 150%;
+}
+
+/* The text frame inside the card content */
+.blog-text-frame {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Title & paragraph inside the card */
+.blog-text-frame h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.blog-text-frame p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* Framework list styling */
+.framework-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.framework-list li {
+  background-color: rgb(32, 192, 255);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .portfolio-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-section-title {
+    font-size: 1.5rem;
+  }
+  .blog-text-frame h3 {
+    font-size: 1rem;
+  }
+  .framework-list li {
+    font-size: 0.7rem;
+  }
+}
